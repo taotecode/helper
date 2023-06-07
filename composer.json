@@ -1,26 +1,27 @@
 {
-  "name": "yuanzhumc/helper",
+  "name": "taotecode/helper",
   "description": "php helper class. PHP助手类集",
+  "type": "library",
   "minimum-stability": "stable",
   "license": "Apache-2.0",
-  "homepage": "",
   "version": "1.0.0",
   "authors": [
     {
-      "name": "yuanzhumc",
-      "email": "yuanzhumc@163.com"
+      "name": "taotecode",
+      "email": "yuanzhumc@gmail.com"
     }
   ],
   "require": {
     "php": ">=7.3",
     "ext-mbstring": "*"
   },
+  "require-dev": {
+    "phpunit/phpunit": "^9.0"
+  },
   "autoload": {
     "psr-4": {
-      "yuanzhumc\\helper\\": "src"
-    },
-    "files": [
-      "src/helper.php"
-    ]
+      "TaoTeCode\\Helper\\": "src/",
+      "TaoTeCode\\Helper\\Tests\\": "tests/"
+    }
   }
 }
